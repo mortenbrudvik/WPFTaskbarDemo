@@ -19,9 +19,9 @@ public partial class App
         
         jumpList.JumpItems.Add(CreateTask("Quit", exePath, "close", @"C:\windows\System32\SHELL32.dll", 131)); // TODO: Use ImageLib to fetch icon
             
-        jumpList.JumpItems.Add(CreateRecentItem("Demo", exePath, "\"start=Demo\""));
-        jumpList.JumpItems.Add(CreateRecentItem("Dev", exePath, "\"start=Dev\""));
-        jumpList.JumpItems.Add(CreateRecentItem("Meeting", exePath, "\"start=Meeting\""));
+        jumpList.JumpItems.Add(CreateRecentItem("Presentation", exePath, "\"start=presentation\""));
+        jumpList.JumpItems.Add(CreateRecentItem("Sales", exePath, "\"start=sales\""));
+        jumpList.JumpItems.Add(CreateRecentItem("Forecast", exePath, "\"start=forecast\""));
             
         jumpList.Apply();
     }

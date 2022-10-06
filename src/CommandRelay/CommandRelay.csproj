@@ -17,10 +17,4 @@
     <OutputPath>..\..\release\</OutputPath>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="favicon.png" />
-    <None Remove="close.png" />
-    <None Remove="close.ico" />
-  </ItemGroup>
-
 </Project>

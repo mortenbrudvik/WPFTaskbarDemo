@@ -24,10 +24,4 @@
     <PackageReference Include="MahApps.Metro.IconPacks" Version="4.11.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Remove="Images\play.png" />
-    <None Remove="Images\refresh.png" />
-    <None Remove="Images\stop.png" />
-  </ItemGroup>
-
 </Project>

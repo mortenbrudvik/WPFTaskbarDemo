@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5DABADF7-42BC-4C54-84F5-67AA9AE62E2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFTaskbarDemoUI", "src\WPFTaskbarDemoUI\WPFTaskbarDemoUI.csproj", "{57B13150-0CAF-438F-B200-35D0CD3A4151}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandRelay", "src\CommandRelay\CommandRelay.csproj", "{04AF56E6-5FEE-47C5-91BA-4CE7CED347A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageLib", "src\ImageLib\ImageLib.csproj", "{D36CAC77-1E94-48DE-9AC4-8D8391DDD290}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57B13150-0CAF-438F-B200-35D0CD3A4151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57B13150-0CAF-438F-B200-35D0CD3A4151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57B13150-0CAF-438F-B200-35D0CD3A4151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57B13150-0CAF-438F-B200-35D0CD3A4151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04AF56E6-5FEE-47C5-91BA-4CE7CED347A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04AF56E6-5FEE-47C5-91BA-4CE7CED347A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04AF56E6-5FEE-47C5-91BA-4CE7CED347A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04AF56E6-5FEE-47C5-91BA-4CE7CED347A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D36CAC77-1E94-48DE-9AC4-8D8391DDD290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D36CAC77-1E94-48DE-9AC4-8D8391DDD290}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D36CAC77-1E94-48DE-9AC4-8D8391DDD290}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D36CAC77-1E94-48DE-9AC4-8D8391DDD290}.Debug|Any CPU.Build.0 = Debug|x86
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{57B13150-0CAF-438F-B200-35D0CD3A4151} = {5DABADF7-42BC-4C54-84F5-67AA9AE62E2D}
+		{04AF56E6-5FEE-47C5-91BA-4CE7CED347A0} = {5DABADF7-42BC-4C54-84F5-67AA9AE62E2D}
+		{D36CAC77-1E94-48DE-9AC4-8D8391DDD290} = {5DABADF7-42BC-4C54-84F5-67AA9AE62E2D}
+	EndGlobalSection
+EndGlobal

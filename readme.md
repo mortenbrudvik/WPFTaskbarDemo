@@ -8,6 +8,8 @@ The code is a wee bit messy, as it were done as quick as possible. :)
 - [Mahapps.Metro](https://github.com/MahApps/MahApps.Metro) - A toolkit for creating awesome WPF applications. Lots of goodness out-of-the box. 
 - [MahApps.Metro IconPacks](https://github.com/MahApps/MahApps.Metro.IconPacks) - Awesome icon packs for WPF and UWP in one library
 
+### Taskbar Demo Application
+
 ![Demo app](demo-app.png)
 
 ### Taskbar Buttons

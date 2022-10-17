@@ -38,6 +38,10 @@ public class JumpListService
     public void Apply()
     {
         var jumpList = new JumpList();
+        
+        jumpList.ShowFrequentCategory = true;
+        jumpList.ShowRecentCategory = true;
+
         JumpList.SetJumpList(Application.Current, jumpList);
 
         _actionList.ForEach(item => jumpList.JumpItems.Add(item));

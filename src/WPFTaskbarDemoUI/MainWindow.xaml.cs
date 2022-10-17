@@ -80,6 +80,23 @@ public partial class MainWindow
     {
         TaskbarItemInfo.Overlay = null;
     }
+
+    private void ButtonBase_OnClick(object sender, RoutedEventArgs e)
+    {
+        _jumpListService.ClearRecentList();
+        Action<TextBox, TextBox> AddRecentItem = (s1, s2) =>
+        {
+            if (!string.IsNullOrWhiteSpace(s1.Text) && !string.IsNullOrWhiteSpace(s2.Text))
+                _jumpListService.AddRecentItem(s1.Text.Trim(), s2.Text.Trim());
+        };
+
+        AddRecentItem(TitleItem1, CommandItem1);
+        AddRecentItem(TitleItem2, CommandItem2);
+        AddRecentItem(TitleItem3, CommandItem3);
+        AddRecentItem(TitleItem4, CommandItem4);
+        
+        _jumpListService.Apply();
+    }
 }
 
 

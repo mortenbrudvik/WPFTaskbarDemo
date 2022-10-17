@@ -10,10 +10,12 @@ namespace WPFTaskbarUI;
 
 public partial class MainWindow
 {
+    private readonly JumpListService _jumpListService;
     private readonly MainWindowViewModel _viewModel;
 
-    public MainWindow()
+    public MainWindow(JumpListService jumpListService)
     {
+        _jumpListService = jumpListService;
         InitializeComponent();
 
         _viewModel = new MainWindowViewModel(UpdateCount);

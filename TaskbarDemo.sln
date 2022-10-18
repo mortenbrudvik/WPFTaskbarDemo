@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFTaskbarDemoUI", "src\WPF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandRelay", "src\CommandRelay\CommandRelay.csproj", "{04AF56E6-5FEE-47C5-91BA-4CE7CED347A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageLib", "src\ImageLib\ImageLib.csproj", "{D36CAC77-1E94-48DE-9AC4-8D8391DDD290}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IconSet", "src\IconSet\IconSet.csproj", "{D36CAC77-1E94-48DE-9AC4-8D8391DDD290}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

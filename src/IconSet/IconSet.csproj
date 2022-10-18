@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Win32Resource>ResTempl1.res</Win32Resource>
+    <Win32Resource>IconResources.res</Win32Resource>
     <Platforms>x86</Platforms>
     <RootNamespace>ImageLibby</RootNamespace>
     <Configurations>Debug;Release</Configurations>

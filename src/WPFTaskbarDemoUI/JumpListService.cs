@@ -17,7 +17,7 @@ public class JumpListService
     {
         var exeFolderPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
         _commandRelayPath = Path.Combine(exeFolderPath, "CommandRelay.exe");
-        _imagePath = Path.Combine(exeFolderPath, "imagelib.dll");
+        _imagePath = Path.Combine(exeFolderPath, "iconset.dll");
 
         _recentList = new List<JumpTask>();
         _actionList = new List<JumpTask>();

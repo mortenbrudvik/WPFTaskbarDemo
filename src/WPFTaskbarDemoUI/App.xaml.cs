@@ -1,6 +1,4 @@
-﻿using System.IO;
-using System.Reflection;
-using System.Windows;
+﻿using System.Windows;
 
 namespace WPFTaskbarUI;
 
@@ -23,5 +21,4 @@ public partial class App
         MainWindow = new MainWindow(jumpListService);
         MainWindow.Show();
     }
-
 }

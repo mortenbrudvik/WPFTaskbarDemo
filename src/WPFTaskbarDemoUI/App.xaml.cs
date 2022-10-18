@@ -10,7 +10,7 @@ public partial class App
     {
         base.OnStartup(e);
 
-        var jumpListService = new JumpListService(CommandRelayPath);
+        var jumpListService = new JumpListService();
         
         jumpListService.AddActionItem("Quit", "close", ActionIcon.Close);
 
@@ -24,5 +24,4 @@ public partial class App
         MainWindow.Show();
     }
 
-    public string CommandRelayPath => Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "CommandRelay.exe");
 }

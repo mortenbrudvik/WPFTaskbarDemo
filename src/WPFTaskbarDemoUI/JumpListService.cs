@@ -1,4 +1,6 @@
 ﻿using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
 using System.Windows;
 using System.Windows.Shell;
 
@@ -9,10 +11,14 @@ public class JumpListService
     private readonly string _commandRelayPath;
     private readonly List<JumpTask> _recentList;
     private readonly List<JumpTask> _actionList;
+    private readonly string _imagePath;
 
-    public JumpListService(string commandRelayPath)
+    public JumpListService()
     {
-        _commandRelayPath = commandRelayPath;
+        var exeFolderPath = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+        _commandRelayPath = Path.Combine(exeFolderPath, "CommandRelay.exe");
+        _imagePath = Path.Combine(exeFolderPath, "imagelib.dll");
+
         _recentList = new List<JumpTask>();
         _actionList = new List<JumpTask>();
     }
@@ -29,7 +35,7 @@ public class JumpListService
         var iconResourceIndex = 0;
         if (icon == ActionIcon.Close)
         {
-            iconResourcePath = "";
+            iconResourcePath = _imagePath;
             iconResourceIndex = 0;
         }
         _actionList.Add(CreateTask(title, _commandRelayPath, "\"" + command + "\"", iconResourcePath, iconResourceIndex));

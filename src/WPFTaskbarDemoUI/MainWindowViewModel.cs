@@ -11,7 +11,6 @@ public class MainWindowViewModel : INotifyPropertyChanged
 {
     private readonly Action<string> _updateCount;
     private bool _isRunning;
-    private readonly ImageFactory _imageFactory;
     private string _consoleText;
     private bool _progressIndicatorEnabled;
     private string _progressStatus = "None";
@@ -21,18 +20,16 @@ public class MainWindowViewModel : INotifyPropertyChanged
     public MainWindowViewModel(Action<string> updateCount)
     {
         _updateCount = updateCount;
-        _imageFactory = new ImageFactory();
         ProgressStatusStates = new List<string> {"None", "Indeterminate", "Normal", "Error", "Paused"};
         ProgressStatusSelected = "None";
     }
 
     public ImageSource PlayerIcon => IsRunning
-        ? _imageFactory.Create(PackIconMaterialKind.Stop)
-        : _imageFactory.Create(PackIconMaterialKind.Play);
+        ? ImageFactory.Create(PackIconMaterialKind.Stop)
+        : ImageFactory.Create(PackIconMaterialKind.Play);
 
-    public ImageSource StopIcon => _imageFactory.Create(PackIconMaterialKind.Stop, Brushes.Red);
-    
-    
+    public ImageSource StopIcon => ImageFactory.Create(PackIconMaterialKind.Refresh, Brushes.Aqua);
+
     public string ConsoleText
     {
         get => _consoleText;
